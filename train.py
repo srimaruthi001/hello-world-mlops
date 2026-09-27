@@ -1,6 +1,6 @@
 """
 Simple training script:
-- loads iris dataset from sklearn
+- loads iris dataset from scikit-learn
 - trains a LogisticRegression
 - saves model to model.pkl
 """
