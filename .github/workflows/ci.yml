@@ -6,6 +6,15 @@ on:
   pull_request:
     branches: [ main ]
   workflow_dispatch:
+    inputs:
+      message:
+        description: 'Deployment Target'
+        required: true
+        default: 'staging'
+        type: choice
+        options:
+          - staging
+          - main
 
 jobs:
   matrix-pip:
